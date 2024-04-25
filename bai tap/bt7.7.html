@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         while (true){
+            let a = Number(prompt("nhap 1 so nguyen duong  bat ki"))
+            // xem a co phai la so nguyen duong hay k?
+            while(!Number.isInteger(a) || a<=0){
+                a = Number(prompt("nhap lai a, a k phai la so nguyen duong"))
+            }
+            alert("gia tri a hop le, a = "+a) ;
+            // kiem tra xem a co phai la so nguyen to k3
+            let isPrime = true ;
+            for(let i = 2; i<a ; i++){
+                if(a%i === 0){
+                    isPrime = false;
+                    break;
+                }
+            }
+            // hien thi ket qua:
+            if(isPrime){
+                alert(a +"la so nguyen to")
+            }else{
+                alert(a +"la k so nguyen to")
+            }
+         
+            //hoi nguoi dung co muon tiep tuc k
+            // let check = prompt("ban co muon lam tiep k, neu k hay nhap (no) de ket thuc")
+            // while(check ==="no"){
+            //     check = prompt("ban co muon lam tiep k, neu k hay nhap (no) de ket thuc");  
+            //     break;
+            // }
+            let check = prompt("ban co muon lam tiep k, neu k hay nhap (no) de ket thuc")
+            if (check === "no") {
+                break;
+            }
+            }
+      
+    </script>
+   
+</body>
+</html>
